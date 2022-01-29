@@ -11,4 +11,8 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://t.me/Anytime_Sri_Lankan_link_Share")
 
+@bot.message_handler(commands=["welcome"])
+def send_welcome(message):
+    bot.reply_to(message,"Hello {username}")
+
 bot.polling()
