@@ -19,9 +19,4 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://t.me/Spider_Man_Super")
 
-#send_photo
-@bot.on_message(filters.command("photo"))
-def command3(bot, message):
-    bot.send_photo(message.chat.id, "https://images.app.goo.gl/Ub3zpj19tfp3jWi79")
-
 bot.polling()
