@@ -15,4 +15,8 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"Go to the Botfather. And create the bot https://t.me/BotFather")
 
+@bot.message_handler(commands=["owner"])
+def send_welcome(message):
+    bot.reply_to(message,"https://t.me/Spider_Man_Super")
+
 bot.polling()
