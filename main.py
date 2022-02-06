@@ -22,6 +22,6 @@ def send_welcome(message):
 #send_photo
 @bot.on_message(filters.command("photo"))
 def command3(bot, message):
-    bot.send_photo(message.chat.id, "content://com.android.chrome.FileProvider/images/screenshot/1644128040450828178238706960328.jpg")
+    bot.send_photo(message.chat.id, "https://images.app.goo.gl/Ub3zpj19tfp3jWi79")
 
 bot.polling()
