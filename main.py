@@ -19,4 +19,9 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://t.me/Spider_Man_Super")
 
+@bot.message_handler(commands=["photo"])
+def send_photo(message):
+    bot.reply_to(message,"content://com.android.chrome.FileProvider/images/screenshot/16441271396234741824962974567579.jpg")
+
+
 bot.polling()
