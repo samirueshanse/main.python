@@ -25,6 +25,6 @@ def send_welcome(message):
 
 @bot.message_handler(commands=["programing_language"])
 def send_welcome(message):
-    bot.reply_to(message,"programing language is python")
+    bot.reply_to(message,"programing language is python python.org")
 
 bot.polling()
