@@ -19,4 +19,12 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://t.me/Spider_Man_Super")
 
+@bot.message_handler(commands=["language"])
+def send_welcome(message):
+    bot.reply_to(message,"English Language")
+
+@bot.message_handler(commands=["programing_language"])
+def send_welcome(message):
+    bot.reply_to(message,"programing language - python ")
+
 bot.polling()
