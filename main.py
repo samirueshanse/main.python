@@ -31,4 +31,32 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://play.google.com/store/apps/details?id=us.zoom.videomeetings")
 
+@bot.message_handler(commands=["tiktok"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically")
+
+@bot.message_handler(commands=["messager_lite"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.facebook.mlite")
+
+@bot.message_handler(commands=["youtube"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.google.android.youtube")
+
+@bot.message_handler(commands=["twitter"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.twitter.android")
+
+@bot.message_handler(commands=["microsoft_edge"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.microsoft.emmx")
+
+@bot.message_handler(commands=["google_play_games"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.google.android.play.games")
+
+@bot.message_handler(commands=["help"])
+def send_welcome(message):
+    bot.reply_to(message,"Use my menu")
+
 bot.polling()
