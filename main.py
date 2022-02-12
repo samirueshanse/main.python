@@ -1,30 +1,34 @@
 import os
 import telebot
 
-bot = telebot.TeleBot("5223814916:AAFFbc5LR94uaRh8lXCDrudY-uX1IyXbbHQ")
+bot = telebot.TeleBot("5198668161:AAFa6_zqbCu7P70h_2H9ogBZN7AC8l2T3yU")
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message,"Hello! I am Management Chat BOT")
+    bot.reply_to(message,"Hello! I am 𝐀𝐧𝐝𝐫𝐨𝐢𝐝 𝐀𝐩𝐩 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐁𝐨𝐭")
 
-@bot.message_handler(commands=["group"])
+@bot.message_handler(commands=["whatsapp_business"])
 def send_welcome(message):
-    bot.reply_to(message,"https://t.me/Anytime_Sri_Lankan_link_Share")
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.whatsapp.w4b")
 
-@bot.message_handler(commands=["newbot"])
+@bot.message_handler(commands=["telegram"])
 def send_welcome(message):
-    bot.reply_to(message,"Go to the Botfather. And create the bot https://t.me/BotFather")
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=org.telegram.messenger")
 
-@bot.message_handler(commands=["owner"])
+@bot.message_handler(commands=["facebook_lite"])
 def send_welcome(message):
-    bot.reply_to(message,"https://t.me/Spider_Man_Super")
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.facebook.lite")
 
-@bot.message_handler(commands=["language"])
+@bot.message_handler(commands=["imo"])
 def send_welcome(message):
-    bot.reply_to(message,"English Language")
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.imo.android.imoim")
 
-@bot.message_handler(commands=["programing_language"])
+@bot.message_handler(commands=["skype"])
 def send_welcome(message):
-    bot.reply_to(message,"programing language is python python.org")
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.skype.raider")
+
+@bot.message_handler(commands=["zoom"])
+def send_welcome(message):
+    bot.reply_to(message,"https://play.google.com/store/apps/details?id=us.zoom.videomeetings")
 
 bot.polling()
