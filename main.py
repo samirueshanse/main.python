@@ -35,7 +35,7 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically")
 
-@bot.message_handler(commands=["messager_lite"])
+@bot.message_handler(commands=["messanger_lite"])
 def send_welcome(message):
     bot.reply_to(message,"https://play.google.com/store/apps/details?id=com.facebook.mlite")
 
