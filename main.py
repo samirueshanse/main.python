@@ -59,6 +59,4 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"Use my menu")
 
-@bot.send_message(message=["hello"])
-
 bot.polling()
