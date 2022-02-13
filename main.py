@@ -59,8 +59,4 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message,"Use my menu")
 
-@bot.message_handler(commands=["apk_download"])
-def send_photo(message):
-    bot.reply_to(photo,"content://com.android.chrome.FileProvider/images/screenshot/16447268115384876077213413437761.jpg")
-
 bot.polling()
