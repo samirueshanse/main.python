@@ -5,8 +5,11 @@ bot = telebot.TeleBot("5198668161:AAFa6_zqbCu7P70h_2H9ogBZN7AC8l2T3yU")
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message,"Hello! I am 𝐀𝐧𝐝𝐫𝐨𝐢𝐝 𝐀𝐩𝐩 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐁𝐨𝐭"
-                         "Use my menu")
+    bot.reply_to(message,"Hello! I am 𝐀𝐧𝐝𝐫𝐨𝐢𝐝 𝐀𝐩𝐩 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐁𝐨𝐭"))
+
+@bot.message_handler(commands=["start"])
+def send_welcome(message):
+    bot.reply_to(message,"Use my menu"))
 
 @bot.message_handler(commands=["whatsapp_business"])
 def send_welcome(message):
